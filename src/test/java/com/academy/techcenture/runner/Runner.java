@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/java/com/academy/techcenture/features"},
-        glue = "com/academy/techcenture/stop_definitions"
+        glue = {"com/academy/techcenture/stop_definitions", "com/academy/techcenture/hooks"}
 )
 public class Runner {
     
