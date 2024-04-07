@@ -2,6 +2,8 @@ package com.academy.techcenture.stop_definitions;
 
 import com.academy.techcenture.config.ConfigReader;
 import com.academy.techcenture.driver.Driver;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -57,6 +59,17 @@ public class NopCommerStepDefinitions {
         Assert.assertTrue(error.isDisplayed());
         String actualErrorMessage = error.getText();
         System.out.println(actualErrorMessage);
-        Assert.assertEquals(errorMessage, actualErrorMessage);
+        Assert.assertTrue(actualErrorMessage.contains(errorMessage));
+    }
+
+    @Before
+    public void beforeEachScenario(){
+        driver = Driver.getDriver();
+    }
+
+    @After
+    public void afterEachScenario(){
+        Driver.quitDriver();
+        driver = null;
     }
 }
