@@ -5,9 +5,9 @@ Feature: NopCommerce Login Feature
     When user clicks on login link
     Then user should be navigate to login page
 
-  Scenario: NopCommerce User Login Positive Scenario
+  Scenario: NopCommerce User Login Positive ScenarioThen user should see my account and logout links on top
     When user uses login credentials "kevin.lee@gmail.com" and "Kevin123!" and clicks on login button
-    Then user should be able to log in
+
 
   Scenario: NopCommerce User Login Negative Scenario
     When user uses login credentials "kevin.lee@gmail.com" and "Kevin888!" and clicks on login button
