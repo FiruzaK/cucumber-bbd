@@ -1,6 +1,5 @@
 Feature: NopCommerce User Registration Feature
-  @register
-  Scenario: NopCommerce Register New User
+  Scenario : NopCommerce Register New User
     Given user is on the homepage
     When user clicks on login link
     Then user should be navigate to login page
@@ -9,7 +8,7 @@ Feature: NopCommerce User Registration Feature
     And user clicks on gender as "male"
     And user enter "Kevin" for firstname
     And user enter "Lee" for lastname
-    And user enters 15, "May", 1994 for dob
+    And user enters "15", "May", "1994" for dob
     And user enters "kevin.lee6@gmail.com"
     And user enters "Kevin Technologies LLC" for company
     And user "checks" newsletter checkbox
@@ -20,8 +19,7 @@ Feature: NopCommerce User Registration Feature
     When user clicks on continue button
     Then user is on the homepage
     And user checks if they can log in with newly created credentials "kevin.lee6@gmail.com" and "Kev123!"
-#    When user clicks on the login link
-#    Then user should be navigate to login page
-#    And user uses login credentials "kevin.lee6@gmail.com" and "Kev123!" and clicks on login button
-#    Then user should see my account and logout links on top
-#    And user logs out from their account
+
+
+
+

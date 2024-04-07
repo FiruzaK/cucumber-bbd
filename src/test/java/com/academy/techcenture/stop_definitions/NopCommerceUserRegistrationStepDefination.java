@@ -36,8 +36,8 @@ public class NopCommerceUserRegistrationStepDefination {
     public void user_enter_for_lastname(String lastName) {
         getDriver().findElement(By.id("LastName")).sendKeys(lastName);
     }
-    @Then("user enters {int}, {string}, {int} for dob")
-    public void user_enters_for_dob(Integer day, String month, Integer year) {
+    @Then("user enters {string}, {string}, {string} for dob")
+    public void user_enters_for_dob(String day, String month, String  year) {
        Select selectday = new Select(getDriver().findElement(By.name("DateOfBirthDay")));
        Select selectMonth = new Select(getDriver().findElement(By.name("DateOfBirthMonth")));
        Select selectYear = new Select(getDriver().findElement(By.name("DateOfBirthYear")));
