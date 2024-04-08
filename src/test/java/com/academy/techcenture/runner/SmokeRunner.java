@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/com/academy/techcenture/features"},
         glue = {"com/academy/techcenture/stop_definitions", "com/academy/techcenture/hooks"},
         dryRun = false,
-        tags = "@smoke"
+        tags = "@smoke",
+        plugin = {"pretty", "junit:target/JUNITReport/report.xml",
+                  "json:target/JSONReport/report.json",
+                  "html:target/HtmlReport/report.html"}
 )
 public class SmokeRunner {
 

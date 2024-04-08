@@ -28,7 +28,7 @@ Feature: NopCommerce User Registration Feature with Scenario Outline
 
 
 
-    @smoke
+   # @smoke
     Examples:
     |gender|firstname|lastname| day | month | year |        email        |  company_name   | newsletter | password | confirm_password |       success_message      |
     |female| kaley   |  lee   | 13  |  July | 2000 | kaley.lee2@gmail.com| Techcenture LLC | unchecks   |  Kev123! |     Kev123!      | Your registration completed|
