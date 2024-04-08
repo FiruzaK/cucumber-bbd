@@ -1,5 +1,4 @@
 package com.academy.techcenture.runner;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -9,8 +8,8 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/com/academy/techcenture/features"},
         glue = {"com/academy/techcenture/stop_definitions", "com/academy/techcenture/hooks"},
         dryRun = false,
-        tags = "@register"
+        tags = "@smoke"
 )
-public class Runner {
-    
+public class SmokeRunner {
+
 }
